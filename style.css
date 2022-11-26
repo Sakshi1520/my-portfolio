@@ -7,7 +7,7 @@ body {
 
 :root {
     --primary-color: #ec4899;
-    --dark-grey: #94a3b8;
+    --dark-grey: #5a5a5a;
     --light-pink: #fdf2f8;
 }
 
@@ -20,23 +20,32 @@ a {
     color: white;
 }
 
+.links-container {
+    display: flex;
+    justify-content: center;
+}
+
 .link {
     padding: 0.5rem 1rem;
+    margin: auto;
+    display: block;
+    width: max-content;
+}
 
+.links-container .link {
+    margin: 0 1rem 0 0;
 }
 
 .link-primary {
     background-color: var(--primary-color);
     color: white;
     border-radius: 0.5rem;
-    margin: 1.5rem 0.5rem;
 }
 
 .link-secondary {
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
     border-radius: 0.5rem;
-    margin: 1.5rem 0.5rem;
 }
 
 .link-active {
@@ -101,12 +110,12 @@ nav {
 
 .section-white {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem 2rem 2rem;
 }
 
 .section-light {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem 2rem 2rem;
     background-color: var(--light-pink);
     border-radius: 1rem;
 }
@@ -146,7 +155,7 @@ footer {
 
 @media only screen and (min-width: 700px) {
     .hero-img {
-        max-width: 350px;
+        max-width: 550px;
     }
 
     .container {
