@@ -92,7 +92,7 @@ nav {
 }
 
 .hero {
-    height: calc(100vh - 93px);
+    height: calc(100vh - 93px - 1.5rem);
     margin: auto;
     display: flex;
     flex-direction: column;
